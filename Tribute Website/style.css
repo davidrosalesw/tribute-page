@@ -1,0 +1,349 @@
+
+:root
+{
+    --link-font: 16px;
+    --regular-type: Philosopher-Regular;
+    --bold-type: Philosopher-Bold;
+
+}
+
+@font-face
+{
+    font-family: Philosopher-Bold;
+    src: url(./assets/fonts/Philosopher-Bold.ttf);
+}
+
+@font-face
+{
+    font-family: Philosopher-Regular;
+    src: url(./assets/fonts/Philosopher-Regular.ttf);
+}
+
+#background
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(./assets/images/background.png);
+    background-size: cover;
+    background-position: top center;
+}
+
+#overlay
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, .9);
+    color: white;
+}
+
+h3, h1
+{
+    font-family: var(--bold-type);
+}
+
+p
+{
+    line-height: 30px;
+}
+
+p a
+{
+    font-family: var(--regular-type);
+    font-style: italic;
+    cursor: pointer;
+    transition: .3s;
+    color: white
+}
+
+p a:hover
+{
+    text-decoration: none;
+    color: rgb(143, 143, 143);
+
+}
+
+
+#nav .nav-links
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+#nav .nav-links .nav-item
+{
+    list-style: none;
+    transition: all .3s;
+}
+
+#nav .nav-links .nav-item:hover{
+    transform: scale(1.1);
+    border-bottom: 3px white solid;
+    padding-bottom: 5px;
+}
+
+#nav .nav-links .nav-item a
+{
+    font-size: var(--link-font);
+    color: white;
+    text-decoration: none;
+    transition: all .3s;
+
+}
+
+#nav .nav-links .nav-item a:hover
+{
+    color: rgb(207, 207, 207);
+
+}
+
+#main-section{
+    width: 100%;
+    height: auto;
+
+}
+
+#main-container
+{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    text-align: center;
+}
+
+.title-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
+
+#img-div
+{
+    background-color: black;
+    margin: 0;
+}
+
+#img-div img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+#tribute-info
+{
+    background-color: white;
+    color: black;
+}
+
+#tribute-info p
+{
+    text-align: justify;
+}
+
+#tribute-info #life
+{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#tribute-info h3, #death-info h3
+{
+    padding-bottom: 20px;
+}
+#photo-life{
+    background-image: url(./assets/images/photo-life.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#death-info 
+{
+    background-color: black;
+    color: white;
+}
+
+#death-info p
+{
+    text-align: justify;
+}
+
+#photo-death{
+    background-image: url(./assets/images/photo-dead.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#death-info #death
+{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#musical-carrer
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+#musical-carrer p
+{
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+#musical-carrer h3
+{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#photo-death
+{
+    background-image: url(./assets/images/photo-dead.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#photo-carrer
+{
+    width: 100%;
+    height: 400px;
+    background-image: url(./assets/images/photo-carrer.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#discography
+{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#discography h3
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#nav-album .nav-links
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+#nav-album .nav-links .album-title
+{
+    list-style: none;
+    transform: scale(2px);
+    transition: .3s;
+}
+#nav-album .nav-links .album-title img
+{
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgb(97, 97, 97);
+    margin-bottom: 10px;
+}
+
+#nav-album .nav-links .album-title:hover
+{
+    list-style: none;
+    transform: scale(1.1);
+}
+
+#nav-album .nav-links .album-title a
+{
+    color: white;
+    transition: .3s;
+}
+
+#nav-album .nav-links .album-title a:hover
+{
+    color: rgb(143, 143, 143);
+    transform: all;
+    text-decoration: none;
+}
+
+
+#audio{
+    display: block;
+    margin-bottom: 60px;
+}
+
+#audio h3, p
+{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#audio .voice-container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    
+}
+
+#audio .voice-container .audio-voice
+{
+    margin-bottom: 25px;
+    padding: 20px;
+    width: 400px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 1px rgb(206, 206, 206) solid;
+    transition: .3s;
+    color: black;
+}
+
+#audio .voice-container .audio-voice:hover
+{
+    transform: scale(1.1);
+}
+
+.go-up
+{
+display: block;
+text-align: center;
+color: white;
+transition: .3s;
+font-style: italic;
+font-size: 12px;
+padding-bottom: 20px;
+}
+
+.go-up:hover{
+    color: rgb(143, 143, 143);
+    transform: all;
+    text-decoration: none;
+}
+
+#footer
+{
+    margin-top: 25px;
+    text-align: center;
+
+}
